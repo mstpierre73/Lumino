@@ -56,7 +56,14 @@ class Board extends Component {
 
   render() {
     if(this.state.hasWon) {
-      return <h1>You win !</h1>
+      return (
+        <div className='Board-title'>
+          <div className= 'winner'>
+            <span className='neon-orange'>You</span>
+            <span className='neon-blue'>Win!</span>
+          </div>
+      </div>
+      )
     }
 
     let tableBoard = [];
